@@ -47,13 +47,13 @@ const Contact = () => {
               </span>
             </h2>
             <p className="mt-4 text-xl w-[300px]">
-              Contact me today let me help you with my services!
+              Get in touch right now for your IT solution.
             </p>
           </div>
           {/* contact-details */}
           <div className="py-6 mt-2">
             <div className="flex items-center gap-4 my-4">
-              <FaLocationDot className="text-5xl text-purple-800" />
+              <FaLocationDot className="text-4xl text-purple-800" />
               <div className="flex items-start flex-col">
                 <span className="text-xl font-normal text-gray-500">
                   Address
@@ -64,18 +64,18 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center gap-4 my-4">
-              <FaPhoneVolume className="text-5xl text-purple-800" />
+              <FaPhoneVolume className="text-4xl text-purple-800" />
               <div className="flex items-start flex-col">
                 <span className="text-xl font-normal text-gray-500">
                   Phone Number
                 </span>
                 <p className="text-2xl font-semibold text-purple-800">
-                  +234 7040 267 439
+                  +234 912 3229 920
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-4 my-4">
-              <MdEmail className="text-5xl text-purple-800" />
+              <MdEmail className="text-4xl text-purple-800" />
               <div className="flex items-start flex-col">
                 <span className="text-xl font-normal text-gray-500">
                   Email Address
@@ -91,9 +91,7 @@ const Contact = () => {
               Share Social Media
             </h3>
             <div className="flex items-center justify-start gap-4">
-              <FaGithub className="cursor-pointer text-blue-950 text-3xl" />
-              <FaLinkedinIn className=" cursor-pointer text-blue-950 text-3xl" />
-              <FaCodepen className="cursor-pointer text-blue-950 text-3xl" />
+              <FaLinkedinIn className=" cursor-pointer bg-purple-800 rounded-full px-2 py-4 text-white text-5xl" />
             </div>
           </div>
         </div>

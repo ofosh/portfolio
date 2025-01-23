@@ -45,16 +45,12 @@ export const assets = {
 };
 export const aboutItem = [
   {
-    title: "10+",
+    title: "37+",
     desc: "Completed Projects",
   },
   {
-    title: "05",
+    title: "09",
     desc: "Companies Worked",
-  },
-  {
-    title: "10+",
-    desc: "Completed Projects",
   },
 ];
 

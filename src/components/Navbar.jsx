@@ -49,13 +49,17 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex items-center">
-          <button className="px-8 text-white font-semibold text-md bg-blue-900 py-4 cursor-pointer rounded-full hidden lg:flex hover:bg-white hover:text-blue-800 transition-all hover:outline">
-            <FaPhoneVolume className=" w-16 text-blue-500 text-2xl" /> Let's
+          <button className="px-8 text-white font-semibold text-md bg-blue-900 py-4 cursor-pointer rounded-full hidden lg:flex hover:bg-white hover:text-blue-800  hover:outline">
+            <FaPhoneVolume className=" w-16 text-orange-500 text-2xl " /> Let's
             Talk
           </button>
           <RiMenuFold2Fill
             className={`${
-              showMobile == "light" ? <RiCloseLargeFill /> : <RiMenuFold2Fill />
+              !showMobile === "light" ? (
+                <RiCloseLargeFill />
+              ) : (
+                <RiMenuFold2Fill />
+              )
             } ml-2 text-5xl text-blue-950 md:hidden`}
             onClick={() => setShowMobile(true)}
           />
@@ -64,7 +68,7 @@ const Navbar = () => {
         <div
           className={`${
             showMobile ? "fixed w-full" : "w-0 h-0"
-          } fixed w-full right-0 top-0 bottom-0  overflow-hidden mt-4 px-4  transition-all`}
+          } fixed w-full right-0 top-0 bottom-0  overflow-hidden mt-4 px-4  transition-all bg-white`}
         >
           <div className="flex justify-end px-3 items-center">
             <RiCloseLargeFill
@@ -72,7 +76,7 @@ const Navbar = () => {
               onClick={() => setShowMobile(false)}
             />
           </div>
-          <ul className="lg:hidden items-end flex flex-col max-w-full px-5 py-8 bg-blue-700  text-lg">
+          <ul className="md:hidden items-end flex flex-col max-w-full px-5 mt-3 py-8 bg-blue-700  text-lg">
             <li className="inline-block text-lg text-white border-b-2 w-full text-right font-medium ml-4 transition-all hover:text-orange-500">
               <a href="#Home" className="ml-4">
                 Home
