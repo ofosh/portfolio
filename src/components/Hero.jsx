@@ -2,6 +2,7 @@ import React from "react";
 import { assets } from "../assets";
 import curve from "../assets/curve.png";
 import Resume from "../assets/Majeed_Resume.pdf";
+import { FaDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -24,9 +25,10 @@ export default function Hero() {
                 <a
                   href={Resume}
                   download="Resume"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex "
                 >
                   Download Resume{" "}
+                  <FaDownload className="text-2xl text-white ml-4" />
                 </a>
               </button>
 
