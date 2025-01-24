@@ -91,7 +91,9 @@ const Contact = () => {
               Share Social Media
             </h3>
             <div className="flex items-center justify-start gap-4">
-              <FaLinkedinIn className=" cursor-pointer bg-purple-800 rounded-full px-2 py-4 text-white text-5xl" />
+              <a href="http://www.linkedin.com/in/majeed-abdul-razaq-olubode-3b33551ba">
+                <FaLinkedinIn className=" cursor-pointer bg-purple-800 rounded-full px-2 py-4 text-white text-5xl" />
+              </a>
             </div>
           </div>
         </div>
