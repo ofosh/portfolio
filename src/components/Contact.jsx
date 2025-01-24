@@ -1,10 +1,10 @@
 import React from "react";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaCodepen } from "react-icons/fa6";
+
 import { IoSend } from "react-icons/io5";
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -93,6 +93,9 @@ const Contact = () => {
             <div className="flex items-center justify-start gap-4">
               <a href="http://www.linkedin.com/in/majeed-abdul-razaq-olubode-3b33551ba">
                 <FaLinkedinIn className=" cursor-pointer bg-purple-800 rounded-full px-2 py-4 text-white text-5xl" />
+              </a>
+              <a href="https://wa.link/eir87o">
+                <FaWhatsapp className=" cursor-pointer bg-purple-800 rounded-full px-2 py-4 text-white text-5xl" />
               </a>
             </div>
           </div>
