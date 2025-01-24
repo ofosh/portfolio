@@ -1,6 +1,7 @@
 import React from "react";
 import { assets } from "../assets";
 import curve from "../assets/curve.png";
+import Resume from "../assets/Majeed_Resume.pdf";
 
 export default function Hero() {
   return (
@@ -19,21 +20,16 @@ export default function Hero() {
               people would actually want to use.
             </p>
             <div className="mt-10 flex items-center justify-center md:justify-start gap-x-6">
-              <a
-                href="/src/assets/Majeed_Resume.pdf"
-                download="Majeed's Resume"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                <button className="flex">
-                  Download Resume{" "}
-                  <img
-                    src={assets.downloadIcon}
-                    width={25}
-                    alt="icon"
-                    className="ml-4"
-                  />
-                </button>
-              </a>
+              <button className="flex">
+                <a
+                  href={Resume}
+                  download="Resume"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Download
+                </a>
+              </button>
+
               <a
                 href="#Contact"
                 className="text-sm/6 font-semibold text-gray-900"
